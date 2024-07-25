@@ -1,0 +1,102 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(161, 161, 241),rgb(255, 255, 255));
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+    border-radius: 5px;
+}
+.popular h1{
+    columns: grey;
+    font-size: 40px;
+    font-weight: 600;
+    
+}
+.popular hr{
+    width: 250px;
+    height: 4px;
+    border-radius: 5px;
+    
+    border: none;
+    background-color: rgb(33, 32, 30);
+
+}
+.popular-item{
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
+}
+@media(max-width:1280px){
+    .popular{
+        height: 70vh;
+        
+    }
+    .popular h1{
+        font-size: 35px;
+    }
+    .popular hr{
+        width: 200px;
+        height: 3px;
+    }
+    .popular-item{
+        gap: 20px;
+        margin-top: 30px;
+    }
+}
+@media(max-width:1024px){
+    .popular{
+        height: 60vh;
+        
+    }
+    .popular h1{
+        font-size: 30px;
+    }
+    .popular hr{
+        width: 200px;
+        height: 2px;
+    }
+    .popular-item{
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
+@media(max-width:800px){
+    .popular{
+        height: 50vh;
+        gap: 6px;
+        
+    }
+    .popular h1{
+        font-size: 25px;
+    }
+    .popular hr{
+        width: 150px;
+        height: 1.5px;
+    }
+    .popular-item{
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
+@media(max-width:500px){
+    .popular{
+        height: 90vh;
+        
+    }
+    .popular-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .popular h1{
+        font-size: 30px;
+    }
+    .popular hr{
+        width: 200px;
+        height: 2px;
+    }
+    .popular-item{
+        gap: 15px;
+        margin-top: 20px;
+    }
+}
